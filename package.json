@@ -1,0 +1,13 @@
+{
+  "name": "nationelle-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static editorial publication for Nationelle Intelligence",
+  "scripts": {
+    "test": "node scripts/check-site.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
