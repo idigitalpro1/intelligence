@@ -96,7 +96,7 @@ check(robots.includes(`Sitemap: ${origin}/sitemap.xml`), 'robots.txt points to t
 check(sitemap.includes(`<loc>${origin}/</loc>`), 'sitemap.xml is missing the homepage');
 check(sitemap.includes(`<loc>${origin}${articlePath}</loc>`), 'sitemap.xml is missing the article');
 check((sitemap.match(/<url>/g) ?? []).length === 2, 'sitemap.xml should contain exactly two real routes');
-for (const excluded of ['.playwright-cli/', 'README.md', 'IMAGE_PROVENANCE.md', 'scripts/']) {
+for (const excluded of ['.vercel/', '.env*', '.playwright-cli/', 'README.md', 'IMAGE_PROVENANCE.md', 'scripts/']) {
   check(vercelIgnore.split(/\r?\n/).includes(excluded), `.vercelignore must exclude ${excluded}`);
 }
 
