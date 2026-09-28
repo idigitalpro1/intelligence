@@ -1,0 +1,11 @@
+{
+  "name": "Nationelle Intelligence",
+  "short_name": "Nationelle",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090c0e",
+  "theme_color": "#090c0e",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

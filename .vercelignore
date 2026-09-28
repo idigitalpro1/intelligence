@@ -1,0 +1,8 @@
+.git/
+.vercel/
+.env*
+.playwright-cli/
+node_modules/
+README.md
+IMAGE_PROVENANCE.md
+scripts/

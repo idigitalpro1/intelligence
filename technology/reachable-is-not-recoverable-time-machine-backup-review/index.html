@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reachable Is Not Recoverable: A Time Machine Backup Review | Nationelle Intelligence</title>
+  <meta name="description" content="A multi-device review shows how to use an older Mac as a network Time Machine destination—and why capacity and restore testing matter.">
+  <link rel="canonical" href="https://nationelleintelligence.com/technology/reachable-is-not-recoverable-time-machine-backup-review/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta name="theme-color" content="#090c0e">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Nationelle Intelligence">
+  <meta property="og:title" content="Reachable Is Not Recoverable">
+  <meta property="og:description" content="A visible network drive is not proof of a working backup. Here is the evidence-based path from reachable storage to a verified restore.">
+  <meta property="og:url" content="https://nationelleintelligence.com/technology/reachable-is-not-recoverable-time-machine-backup-review/">
+  <meta property="og:image" content="https://nationelleintelligence.com/assets/reachable-is-not-recoverable-backup-review-1600x900.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta property="og:image:alt" content="An older desktop Mac connected by Ethernet to a dedicated backup drive.">
+  <meta property="article:published_time" content="2026-09-27T12:00:00-06:00">
+  <meta property="article:section" content="Technology">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reachable Is Not Recoverable">
+  <meta name="twitter:description" content="Four gates separate a visible network drive from a backup you can trust.">
+  <meta name="twitter:image" content="https://nationelleintelligence.com/assets/reachable-is-not-recoverable-backup-review-1600x900.jpg">
+  <meta name="twitter:image:alt" content="An older desktop Mac connected by Ethernet to a dedicated backup drive.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Reachable Is Not Recoverable: Inside a Multi-Device Backup Review",
+    "description": "An older Mac and a network drive can become a useful local backup tier—but only after capacity, compatibility, encryption, and restoration are proved.",
+    "datePublished": "2026-09-27",
+    "author": { "@type": "Organization", "name": "Nationelle Intelligence Technology Desk" },
+    "publisher": { "@type": "Organization", "name": "Nationelle Intelligence" },
+    "image": "https://nationelleintelligence.com/assets/reachable-is-not-recoverable-backup-review-1600x900.jpg",
+    "mainEntityOfPage": "https://nationelleintelligence.com/technology/reachable-is-not-recoverable-time-machine-backup-review/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to article</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="Nationelle Intelligence home">
+        <span class="brand-mark" aria-hidden="true">NI</span>
+        <span>
+          <span class="brand-name">Nationelle Intelligence</span>
+          <span class="brand-desk">Technology Desk</span>
+        </span>
+      </a>
+      <span class="issue">Field Review · September 27, 2026</span>
+    </header>
+
+    <main id="article">
+      <article>
+        <header class="hero">
+          <div>
+            <p class="kicker">Operational Resilience</p>
+            <h1>Reachable Is Not Recoverable</h1>
+            <p class="deck">An older Mac and a network drive can become a useful local backup tier—but only after capacity, compatibility, encryption, and restoration are proved.</p>
+            <p class="byline"><span>By Nationelle Intelligence Technology Desk</span><span aria-hidden="true">•</span><time datetime="2026-09-27">September 27, 2026</time></p>
+          </div>
+          <figure class="hero-art">
+            <img src="/assets/reachable-is-not-recoverable-backup-review-1600x900.jpg" width="1600" height="900" alt="An older desktop Mac connected by Ethernet to a dedicated backup drive." fetchpriority="high">
+            <figcaption>AI-assisted original illustration: Nationelle Intelligence</figcaption>
+          </figure>
+        </header>
+
+        <section class="signal-strip" aria-labelledby="four-gates">
+          <div class="signal-head">
+            <p class="eyebrow">The audit standard</p>
+            <h2 id="four-gates">Four gates, one dependable backup</h2>
+          </div>
+          <ol class="gates">
+            <li><span class="gate-number">01</span><strong>Reachable</strong><p>The computer can see the network share.</p></li>
+            <li><span class="gate-number">02</span><strong>Configured</strong><p>Time Machine recognizes an encrypted destination.</p></li>
+            <li><span class="gate-number">03</span><strong>Completed</strong><p>Initial and incremental backups finish successfully.</p></li>
+            <li><span class="gate-number">04</span><strong>Recoverable</strong><p>A real file is restored and its contents are verified.</p></li>
+          </ol>
+        </section>
+
+        <div class="brief">
+          <aside class="brief-aside">
+            <span>Key finding</span>
+            <p>“A visible network drive is the beginning of the audit, not the end.”</p>
+          </aside>
+
+          <div class="prose">
+            <p class="lede">The proposal sounded practical: keep an older iMac running on the local Ethernet network, attach an existing hard drive, and let the computers in a multi-device environment use it for Time Machine.</p>
+            <p>The idea was workable; the initial capacity assumption was not.</p>
+            <p>Our review began with a distinction that is easy to miss: a reachable storage share is not necessarily a configured backup destination, a completed backup is not necessarily current, and none of those states proves that a file can be restored.</p>
+            <p>In the environment we examined, the network share was online and visible. It was already carrying a substantial amount of data and had roughly half of its usable capacity free. The selected workstation’s storage requirement approached the remaining space. Time Machine, however, reported no configured destination.</p>
+            <p>That evidence changed the recommendation immediately.</p>
+
+            <h2>Capacity comes from evidence</h2>
+            <p>Apple advises using backup storage with at least twice the storage capacity of the Mac being protected. A fixed pilot limit had appeared reasonable when looking only at the network drive’s free space. A second technical review caught the flaw: the proposed limit was smaller than the selected workstation’s existing data, and far below the capacity needed for useful backup history.</p>
+            <p>The correction was simple but important. The plan stopped naming an arbitrary quota and instead required a complete inventory of every eligible Mac. The pilot must now be either a smaller computer whose full capacity fits the backup pool with adequate reserve, or a larger backup destination must be installed.</p>
+            <blockquote>Good infrastructure work is not the absence of corrections. It is a process that exposes assumptions early, records the evidence, and updates one authoritative plan before anyone acts.</blockquote>
+
+            <h2>The safe role for an older iMac</h2>
+            <p>The iMac can serve as a secondary local recovery tier and a convenient fast-restore target. It should not become the primary location for working files, the only copy of critical information, or the assumed backup server for every device.</p>
+            <p>The host and client Macs also need a compatibility check. The reviewed share used SMB. Apple recommends shared-Mac destinations when both Macs run macOS 11 or later; AFP is unsupported in macOS 27 or later.</p>
+
+            <h3>A safe pilot sequence</h3>
+            <ul class="checklist">
+              <li>Inventory each device by type, operating system, full capacity, used space, criticality, and current backup method.</li>
+              <li>Separate Macs from mobile devices, which use iCloud Backup or encrypted Finder backups rather than Time Machine.</li>
+              <li>Verify the host Mac’s operating system, disk health, encryption, Ethernet connection, sleep behavior, restart behavior, and power protection.</li>
+              <li>Preserve all existing data before changing the drive’s layout or sharing configuration.</li>
+              <li>Create a dedicated Time Machine folder and a dedicated non-administrator account.</li>
+              <li>Choose one capacity-qualified pilot Mac and let its initial encrypted backup finish before adding another device.</li>
+              <li>Restore a disposable test file and verify its contents.</li>
+              <li>Add a separate encrypted offsite copy for critical business information.</li>
+            </ul>
+            <p>SMB should never be forwarded directly to the public internet. A local backup in the same building also does not protect against theft, fire, electrical damage, or ransomware affecting both the source and the destination.</p>
+
+            <h2>Size first, purchase second</h2>
+            <p>A larger multi-terabyte system may be reasonable, but no capacity is justified until the device inventory is complete. The correct size follows the Macs being enrolled, their full storage capacity, expected growth, the desired history, and an operational free-space reserve.</p>
+            <p>For this review, the final decision was deliberately conservative: keep the current network drive in its existing role, do not erase or repurpose it, do not enroll the capacity-mismatched workstation, and do not describe the environment as backed up. Begin with the inventory, select a properly sized pilot, complete an encrypted backup, and prove restoration.</p>
+            <p class="closer">That is not slower infrastructure work. It is how a backup project avoids becoming a recovery failure.</p>
+
+            <section class="source-box" aria-labelledby="primary-sources">
+              <h2 id="primary-sources">Primary sources</h2>
+              <ul>
+                <li><a href="https://support.apple.com/104984" rel="external">Apple: Back up your Mac with Time Machine</a></li>
+                <li><a href="https://support.apple.com/102423" rel="external">Apple: Backup disks you can use with Time Machine</a></li>
+                <li><a href="https://support.apple.com/guide/mac-help/mchl31533145/mac" rel="external">Apple: Back up to a shared folder with Time Machine</a></li>
+                <li><a href="https://support.apple.com/118426" rel="external">Apple: How to back up your iPhone or iPad</a></li>
+                <li><a href="https://www.cisa.gov/stopransomware/ransomware-guide" rel="external">CISA: StopRansomware Guide</a></li>
+              </ul>
+            </section>
+
+            <p class="editor-note"><strong>Editor’s note:</strong> Operational identifiers, usernames, internal paths, precise host names, and private inventory details were intentionally omitted. The underlying review made no disk, credential, network, or backup-configuration changes. No storage product or vendor sponsored this analysis.</p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>Nationelle Intelligence</span>
+      <span>Evidence before confidence.</span>
+    </footer>
+  </div>
+</body>
+</html>
